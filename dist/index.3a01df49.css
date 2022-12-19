@@ -1,0 +1,420 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.about {
+  background-image: url("image-hero.736f3354.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem;
+}
+
+.navdiv {
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: Alata, sans-serif;
+  display: flex;
+}
+
+.logo {
+  cursor: pointer;
+  padding: 1rem 1rem 1rem 5rem;
+}
+
+.navbar {
+  flex-direction: row;
+  display: flex;
+}
+
+.navbar li {
+  flex-direction: column;
+  padding: 1rem;
+  list-style: none;
+  display: flex;
+}
+
+.navbar li:hover .underline {
+  display: block;
+}
+
+.underline {
+  width: 2rem;
+  height: .1rem;
+  background-color: #fff;
+  margin-left: .75rem;
+  display: none;
+}
+
+.navbar li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hamclose {
+  flex-direction: row;
+  padding: 1rem;
+  display: flex;
+}
+
+.ham, .close {
+  display: none;
+}
+
+.immersive {
+  color: #fff;
+  width: 40rem;
+  height: 15rem;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  margin: 2rem 0 2rem 10rem;
+  padding: 1rem;
+  font-family: Josefin Sans, sans-serif;
+  font-size: 4rem;
+  font-weight: lighter;
+}
+
+.remaining {
+  flex-direction: column;
+  padding: 4em;
+  display: flex;
+}
+
+.secondsection {
+  flex-direction: row;
+  margin-bottom: 2rem;
+  padding: 5rem 3rem 5rem 0;
+  display: flex;
+}
+
+.interactiveimage {
+  z-index: -1;
+  height: 20rem;
+}
+
+.leader {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #fff;
+  padding: 2rem;
+  position: relative;
+  top: 5rem;
+  left: -5rem;
+}
+
+.heading1 {
+  text-transform: uppercase;
+  padding: 1rem;
+  font-family: Josefin Sans, sans-serif;
+  font-size: 3rem;
+}
+
+.para1 {
+  opacity: .7;
+  padding: 1rem;
+  font-family: Alata, sans-serif;
+  font-size: 1rem;
+}
+
+.imagesection {
+  font-family: Josefin Sans, sans-serif;
+}
+
+.creations {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 0;
+  display: flex;
+}
+
+.heading2 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+.button {
+  color: #000;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #fff;
+  border: .5px solid #000;
+  margin-right: 1rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.imagesgrid {
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  display: grid;
+}
+
+.gridimage:hover {
+  opacity: .5;
+  cursor: pointer;
+}
+
+.gridtext {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 1rem;
+  font-family: Josefin Sans, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: relative;
+  top: -6rem;
+}
+
+.footer {
+  height: 10rem;
+  color: #fff;
+  background-color: #000;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: Alata, sans-serif;
+  display: flex;
+}
+
+.left {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+  display: flex;
+}
+
+.right {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 2rem;
+  display: flex;
+}
+
+.logofooter {
+  cursor: pointer;
+  padding-left: 1rem;
+}
+
+.navbarfooter {
+  flex-direction: row;
+  display: flex;
+}
+
+.navbarfooter li {
+  padding: 1rem;
+  list-style: none;
+}
+
+.navbarfooter li:hover .underline {
+  display: block;
+}
+
+.navbarfooter li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.icons {
+  flex-direction: row;
+  display: flex;
+}
+
+.icons img {
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.iconsdiv:hover .underline {
+  display: block;
+}
+
+.iconsdiv {
+  flex-direction: column;
+  display: flex;
+}
+
+.attribution {
+  color: #fff;
+  background-color: #000;
+  padding: 1rem;
+  font-family: Alata, sans-serif;
+  font-size: 1rem;
+}
+
+.attribution a {
+  color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  body {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .navbar {
+    width: 43.5rem;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    background-color: #000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Josefin Sans, sans-serif;
+    font-size: 2rem;
+    transition: all .5s linear;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+  }
+
+  .active .navbar {
+    pointer-events: auto;
+    visibility: visible;
+    opacity: 1;
+    flex-direction: column;
+    display: flex;
+    transform: translateX(0%);
+  }
+
+  .ham {
+    display: block;
+  }
+
+  .ham img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .close {
+    z-index: 1;
+    display: none;
+  }
+
+  .close img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .immersive {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0;
+  }
+
+  .secondsection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 3rem;
+    display: flex;
+  }
+
+  .leader {
+    z-index: -1;
+    left: 0;
+  }
+
+  .heading1, .para1 {
+    text-align: center;
+  }
+
+  .secondsection {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .heading2 {
+    text-align: center;
+  }
+
+  .imagesection, .creations {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .imagesgrid {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .gridelement {
+    height: 25rem;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .gridimage {
+    height: 25rem;
+    width: 30rem;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .footer {
+    width: auto;
+    height: -moz-fit-content;
+    height: fit-content;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    display: flex;
+  }
+
+  .navbarfooter {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .right {
+    margin: 0;
+    padding: 0;
+  }
+
+  .attribution {
+    width: inherit;
+  }
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */
