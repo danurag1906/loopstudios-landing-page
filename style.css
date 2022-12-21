@@ -36,6 +36,10 @@ body{
 }
 .navbar{
     display: flex;
+    justify-content: space-between;
+}
+.ul{
+    display: flex;
     flex-direction: row;
 }
 .navbar li{
@@ -277,56 +281,61 @@ body{
         margin: 0;
         /* overflow-x:hidden; */
     }
+    .logo{
+        z-index: 3;
+    }
     .main{
         width: fit-content;
     }
+
     .navbar{
-        font-family: 'Josefin Sans', sans-serif;
-        position: absolute;
-        background-color: black;
-        left: 0;
-        top: 0;
-        transform: translateX(100%);
-        transition: all 0.5s linear;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 2rem;
-        /* width: auto;
-        height: auto; */
-        width: 43.5rem;
-        height: 100vh;
-        opacity: 0;
-        display: none;
-        visibility: hidden;
-        pointer-events: none;
-    }
-    .active .navbar{
-        transform: translateX(0%);
-        pointer-events: auto;
-        visibility: visible;
-        opacity: 1;
-        display: flex;
-        flex-direction: column;
-        /* padding-top: 15rem;
-        padding-left: 15rem; */
-    }
-    .ham{
+        /* display: none; */
         display: block;
     }
-    .ham img{
-        width: 3rem;
-        height: 3rem;
+    .ul{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 10rem 3rem;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        transform: translateX(100%);
+        transition: ease-out 0.5s;
+    }
+    .active{
+        transform: translateX(0%);
+        transition: ease-in 0.5s;
+    }
+    ul li{
+        font-size: 3rem;
+    }
+
+    .ham{
+        content: url('./images/icon-hamburger.svg');
+        display: block;
+        position: absolute;
+        top: 2rem;
+        width: 2rem;
+        height: 2rem;
     }
     .close{
-        z-index: 1;
+        content: url('./images/icon-close.svg');
         display: none;
+        
     }
-    .close img{
-        width: 3rem;
-        height: 3rem;
+    .closeactive{
+        content: url('./images/icon-close.svg');
+        z-index: 9999;
+        display: block;
+        position: absolute;
+        top: 2rem;
+        width: 2rem;
+        height: 2rem;
     }
+    
     .immersive{
         width: fit-content;
         height: fit-content;

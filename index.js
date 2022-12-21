@@ -1,17 +1,16 @@
-const navdivElement=document.querySelector('.navdiv');
+
+const navbarElement=document.querySelector('.navbar')
 const hamElement=document.querySelector('.ham')
-const closeElemet=document.querySelector('.close')
+const closeElement=document.querySelector('.close')
+const ulelement=document.querySelector('.ul')
 
 hamElement.addEventListener("click",(e)=>{
-    e.preventDefault()
-    navdivElement.classList.add("active")
-    hamElement.style.display="none"
-    closeElemet.style.display="block"
+    e.preventDefault();
+    ulelement.classList.toggle('active');
+    closeElement.classList.toggle('closeactive')
 })
-
-closeElemet.addEventListener("click",(e)=>{
+closeElement.addEventListener("click",(e)=>{
     e.preventDefault()
-    navdivElement.classList.remove("active")
-    hamElement.style.display="block"
-    closeElemet.style.display="none"
+    ulelement.classList.toggle('active')
+    closeElement.classList.toggle('closeactive')
 })
